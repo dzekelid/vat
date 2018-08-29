@@ -14,8 +14,8 @@ image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/l
 x-kinRank: "7"
 x-alexaRank: "0"
 tags: VAT
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/vat/master/_listings/eu-vat-api/apis.md
 specificationVersion: "0.14"
 apis:
@@ -31,6 +31,56 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/vat/master/_listings/eu-vat-api/countrycodecheck-get-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-topics/vat/master/_listings/eu-vat-api/countrycodecheck-get-openapi.md
+- name: VAT API - Create a VAT invoice
+  x-api-slug: invoice-post
+  description: Create a vat invoice.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/vatapi-logo.png
+  humanURL: http://vatapi.com
+  baseURL: https://vatapi.com//v1
+  tags: VAT, EU, Taxes, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/vat/master/_listings/eu-vat-api/invoice-post-openapi.md
+- name: VAT API - Retrieve a countries VAT rates from an IP address
+  x-api-slug: ipcheck-get
+  description: Retrieve a countries vat rates from an ip address.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/vatapi-logo.png
+  humanURL: http://vatapi.com
+  baseURL: https://vatapi.com//v1
+  tags: VAT, EU, Taxes, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/vat/master/_listings/eu-vat-api/ipcheck-get-openapi.md
+- name: VAT API - Validate a VAT number
+  x-api-slug: vatnumbercheck-get
+  description: Validate a vat number.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/vatapi-logo.png
+  humanURL: http://vatapi.com
+  baseURL: https://vatapi.com//v1
+  tags: VAT, EU, Taxes, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/vat/master/_listings/eu-vat-api/vatnumbercheck-get-openapi.md
+- name: VAT API - Convert a price to or from VAT price.
+  x-api-slug: vatprice-get
+  description: Convert a price to or from vat price..
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/vatapi-logo.png
+  humanURL: http://vatapi.com
+  baseURL: https://vatapi.com//v1
+  tags: VAT, EU, Taxes, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/vat/master/_listings/eu-vat-api/vatprice-get-openapi.md
+- name: VAT API - Retrieve all current EU VAT rates
+  x-api-slug: vatrates-get
+  description: Retrieve all current eu vat rates.
+  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/vatapi-logo.png
+  humanURL: http://vatapi.com
+  baseURL: https://vatapi.com//v1
+  tags: VAT, EU, Taxes, Relative Data, Service API
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/vat/master/_listings/eu-vat-api/vatrates-get-openapi.md
 x-common:
 - type: x-api-gallery
   url: http://eu.bon.utis.api.gallery.streamdata.io

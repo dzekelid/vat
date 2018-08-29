@@ -7,11 +7,22 @@ image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxa
 x-kinRank: "8"
 x-alexaRank: "795977"
 tags: VAT
-created: "2018-08-26"
-modified: "2018-08-26"
+created: "2018-08-28"
+modified: "2018-08-28"
 url: https://raw.githubusercontent.com/streamdata-gallery-topics/vat/master/_listings/taxamo/apis.md
 specificationVersion: "0.14"
-apis: []
+apis:
+- name: Taxamo - Validate VAT Number
+  x-api-slug: apiv1taxvat-numberstax-numbervalidate-get
+  description: Validate vat number.
+  image: http://kinlane-productions.s3.amazonaws.com/screen-capture-api/18644-taxamo.jpg
+  humanURL: https://www.taxamo.com/
+  baseURL: https://api.taxamo.com//
+  tags: Taxes, VAT, Target, Stack Network, Taxes, Relative Data, Service API, Relative
+    StreamRank, Streams
+  properties:
+  - type: x-openapi-spec
+    url: https://raw.githubusercontent.com/streamdata-gallery-topics/vat/master/_listings/taxamo/apiv1taxvat-numberstax-numbervalidate-get-openapi.md
 x-common:
 - type: x-website
   url: https://www.taxamo.com/

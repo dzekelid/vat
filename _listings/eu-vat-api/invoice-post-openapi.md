@@ -3,8 +3,8 @@ swagger: "2.0"
 x-collection-name: EU VAT API
 x-complete: 0
 info:
-  title: EU VAT API Retrieve a countries VAT rates by its 2 digit country code
-  description: Retrieve a countries vat rates by its 2 digit country code.
+  title: EU VAT API Create a VAT invoice
+  description: Create a vat invoice.
   version: "1"
 host: vatapi.com
 basePath: /v1
@@ -43,6 +43,28 @@ paths:
       - Digit
       - Country
       - Code
+  /invoice:
+    post:
+      summary: Create a VAT invoice
+      description: Create a vat invoice.
+      operationId: create_invoice
+      x-api-path-slug: invoice-post
+      parameters:
+      - in: body
+        name: body
+        description: Enter invoice data as JSON
+        schema:
+          $ref: '#/definitions/holder'
+      - in: header
+        name: Response-Type
+        description: The default response type is application/json if you would like
+          to receive an XML response then set this to XML
+      responses:
+        200:
+          description: OK
+      tags:
+      - VAT
+      - Invoice
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

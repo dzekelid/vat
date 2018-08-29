@@ -3,10 +3,8 @@ swagger: "2.0"
 x-collection-name: Plentymarkets
 x-complete: 0
 info:
-  title: Plentymarkets List VAT configurations.
-  description: Lists the VAT configurations for the given filter. Possible filters
-    are <code>locationId</code>, <code>countryId</code>, <code>taxIdNumber</code>
-    and <code>startedAt</code>.
+  title: Plentymarkets Create a VAT configuration
+  description: Create a vat configuration.
   contact:
     name: plentymarkets
     url: https://forum.plentymarkets.com/c/rest-api
@@ -48,6 +46,22 @@ paths:
       - List
       - VAT
       - Configurations
+    post:
+      summary: Create a VAT configuration
+      description: Create a vat configuration.
+      operationId: postRestVat
+      x-api-path-slug: restvat-post
+      parameters:
+      - in: body
+        name: /rest/vat
+        schema:
+          $ref: '#/definitions/holder'
+      responses:
+        200:
+          description: OK
+      tags:
+      - VAT
+      - Configuration
 x-streamrank:
   polling_total_time_average: 0
   polling_size_download_average: 0

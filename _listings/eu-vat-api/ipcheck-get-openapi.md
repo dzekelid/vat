@@ -1,9 +1,10 @@
+---
 swagger: "2.0"
 x-collection-name: EU VAT API
-x-complete: 1
+x-complete: 0
 info:
-  title: VAT API
-  description: a-developer-friendly-api-to-help-your-business-achieve-vat-compliance
+  title: EU VAT API Retrieve a countries VAT rates from an IP address
+  description: Retrieve a countries vat rates from an ip address.
   version: "1"
 host: vatapi.com
 basePath: /v1
@@ -89,78 +90,17 @@ paths:
       - From
       - IP
       - Address
-  /vat-number-check:
-    get:
-      summary: Validate a VAT number
-      description: Validate a vat number.
-      operationId: vat_number_validate
-      x-api-path-slug: vatnumbercheck-get
-      parameters:
-      - in: header
-        name: Response-Type
-        description: The default response type is application/json if you would like
-          to receive an XML response then set this to XML
-      - in: query
-        name: vatid
-        description: The VAT number to validate
-      responses:
-        200:
-          description: OK
-      tags:
-      - Validate
-      - VAT
-      - Number
-  /vat-price:
-    get:
-      summary: Convert a price to or from VAT price.
-      description: Convert a price to or from vat price..
-      operationId: convert_price
-      x-api-path-slug: vatprice-get
-      parameters:
-      - in: query
-        name: code
-        description: The 2 digit country code
-      - in: query
-        name: country_rate
-        description: The VAT rate to get the price for
-      - in: query
-        name: price
-        description: The price you want converting
-      - in: header
-        name: Response-Type
-        description: The default response type is application/json if you would like
-          to receive an XML response then set this to XML
-      - in: query
-        name: type
-        description: Optional, if the price is including VAT set the type to incl
-      responses:
-        200:
-          description: OK
-      tags:
-      - Convert
-      - Price
-      - To
-      - From
-      - VAT
-      - Price
-  /vat-rates:
-    get:
-      summary: Retrieve all current EU VAT rates
-      description: Retrieve all current eu vat rates.
-      operationId: vat_rates
-      x-api-path-slug: vatrates-get
-      parameters:
-      - in: header
-        name: Response-Type
-        description: The default response type is application/json if you would like
-          to receive an XML response then set this to XML
-      responses:
-        200:
-          description: OK
-      tags:
-      - Retrieve
-      - ""
-      - Current
-      - EU
-      - VAT
-      - Rates
+x-streamrank:
+  polling_total_time_average: 0
+  polling_size_download_average: 0
+  streaming_total_time_average: 0
+  streaming_size_download_average: 0
+  change_yes: 0
+  change_no: 0
+  time_percentage: 0
+  size_percentage: 0
+  change_percentage: 0
+  last_run: ""
+  days_run: 0
+  minute_run: 0
+---
